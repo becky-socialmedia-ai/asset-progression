@@ -97,6 +97,34 @@ section.block{padding:84px 0}
 .bar-lab{margin-top:12px;font-size:.9rem;color:rgba(244,239,230,.8)}
 .disclaimer{text-align:center;color:rgba(244,239,230,.5);font-size:.78rem;margin-top:26px;line-height:1.5}
 
+/* case studies */
+.cases{background:#fff}
+.case-card{background:var(--cream-2);border-radius:22px;border-top:4px solid var(--gold);box-shadow:var(--shadow);padding:26px 28px;margin-bottom:22px}
+.case-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.case-label{font-family:'Fraunces',serif;font-weight:600;font-size:1.35rem;color:var(--green-700)}
+.pill-harm{background:rgba(52,211,153,.14);color:var(--green-600);border:1px solid rgba(52,211,153,.35);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.case-body{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch;gap:14px}
+.leg{background:#fff;border:1px solid rgba(27,94,68,.1);border-radius:16px;padding:18px}
+.leg-to{background:linear-gradient(160deg,#103b2d,#176043);border-color:transparent}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.04em;padding:4px 10px;border-radius:999px;margin-bottom:10px}
+.tag-ocr{background:rgba(120,130,125,.2);color:#566}
+.tag-rcr{background:rgba(202,162,74,.2);color:#977a2c}
+.tag-ccr{background:rgba(52,211,153,.22);color:#0f6b49}
+.leg-to .tag{background:rgba(255,255,255,.18);color:#d8f3e6}
+.leg-name{font-weight:700;font-size:1.08rem;color:var(--green-800)}
+.leg-to .leg-name{color:#fff}
+.leg-meta{font-size:.85rem;color:var(--muted);margin:2px 0 12px}
+.leg-to .leg-meta{color:rgba(244,239,230,.72)}
+.leg-price{font-family:'Fraunces',serif;font-weight:700;font-size:1.7rem;color:var(--green-600)}
+.leg-to .leg-price{color:#fff}
+.leg-price span{display:block;font-family:'Inter',sans-serif;font-weight:600;font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:3px}
+.leg-to .leg-price span{color:var(--mint-soft)}
+.arrow{align-self:center;font-size:2rem;color:var(--mint);font-weight:800}
+.case-take{margin-top:18px;font-size:1rem;color:var(--green-700);font-weight:600;display:flex;gap:8px;align-items:baseline}
+.case-take::before{content:"→";color:var(--gold);font-weight:800}
+.cases-note{margin:22px auto 0;font-size:.78rem;color:var(--muted);line-height:1.6;text-align:center;max-width:840px}
+@media(max-width:700px){.case-body{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}}
+
 /* story */
 .story{background:#fff}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
@@ -225,6 +253,79 @@ footer .disc{margin-top:14px;font-size:.76rem;color:rgba(244,239,230,.4)}
       </div>
       <p class="disclaimer">Gross average client outcomes over ~3–4 years, before loan interest, CPF accrued interest, duties, fees and taxes. Past results are not indicative of future results; individual outcomes vary.</p>
     </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="block cases" id="cases">
+  <div class="wrap">
+    <div class="section-head fade">
+      <div class="eyebrow">Others are already doing it</div>
+      <h2>Real trades. Real recent prices.</h2>
+      <p>Three ways homeowners are using today's market — and the "harmonised" size rules — to move up without overstretching.</p>
+    </div>
+
+    <div class="case-card fade">
+      <div class="case-top"><span class="case-label">Trade up to a prime location</span><span class="pill-harm">Harmonised</span></div>
+      <div class="case-body">
+        <div class="leg">
+          <span class="tag tag-rcr">RCR · Woodleigh</span>
+          <div class="leg-name">Park Colonial</div>
+          <div class="leg-meta">3-bedroom · 936 sqft</div>
+          <div class="leg-price">$2.33m<span>Sold</span></div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="leg leg-to">
+          <span class="tag">CCR · Holland Village</span>
+          <div class="leg-name">Skye At Holland</div>
+          <div class="leg-meta">3-bedroom · 915 sqft</div>
+          <div class="leg-price">$2.39m<span>Bought</span></div>
+        </div>
+      </div>
+      <div class="case-take">Roughly the same money — but a prime District 10 address instead of the city fringe.</div>
+    </div>
+
+    <div class="case-card fade">
+      <div class="case-top"><span class="case-label">Trade up a whole bedroom</span><span class="pill-harm">Harmonised</span></div>
+      <div class="case-body">
+        <div class="leg">
+          <span class="tag tag-ocr">OCR · West Coast</span>
+          <div class="leg-name">Whistler Grand</div>
+          <div class="leg-meta">3-bedroom · 990 sqft</div>
+          <div class="leg-price">$2.05m<span>Sold</span></div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="leg leg-to">
+          <span class="tag">OCR · Faber Walk</span>
+          <div class="leg-name">Faber Residence</div>
+          <div class="leg-meta">4-bedroom · 1,119 sqft · new</div>
+          <div class="leg-price">$2.34m<span>Bought</span></div>
+        </div>
+      </div>
+      <div class="case-take">A whole extra bedroom — in a brand-new launch — for a roughly similar outlay.</div>
+    </div>
+
+    <div class="case-card fade">
+      <div class="case-top"><span class="case-label">Trade a region up, profits intact</span><span class="pill-harm">Harmonised</span></div>
+      <div class="case-body">
+        <div class="leg">
+          <span class="tag tag-ocr">OCR · Lentor</span>
+          <div class="leg-name">Lentor Modern</div>
+          <div class="leg-meta">3-bedroom · 990 sqft</div>
+          <div class="leg-price">$2.41m<span>Sold</span></div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="leg leg-to">
+          <span class="tag">RCR · Margaret Drive</span>
+          <div class="leg-name">Penrith</div>
+          <div class="leg-meta">3-bedroom · 936 sqft</div>
+          <div class="leg-price">$2.44m<span>Bought</span></div>
+        </div>
+      </div>
+      <div class="case-take">Almost the same quantum — but a step from the outer region into the rest-of-central.</div>
+    </div>
+
+    <p class="cases-note fade">Based on real transactions recorded Oct–Dec 2025. Illustrative of the strategy — figures are actual transacted prices, not a guaranteed result for your own home. <b>"Harmonised"</b> refers to the current gross-floor-area rules: newer units measure smaller, so a similar budget can buy a comparable home in a better location, layout, or region. CCR = Core Central, RCR = Rest of Central, OCR = Outside Central. General information only; not financial advice.</p>
   </div>
 </section>
 
